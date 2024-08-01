@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

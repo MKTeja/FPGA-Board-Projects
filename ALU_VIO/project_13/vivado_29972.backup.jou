@@ -1,0 +1,72 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 25 11:35:02 2022
+# Process ID: 29972
+# Current directory: D:/dataD files/FPGA Lab/Lab5/project_13
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26020 D:\dataD files\FPGA Lab\Lab5\project_13\project_13.xpr
+# Log file: D:/dataD files/FPGA Lab/Lab5/project_13/vivado.log
+# Journal file: D:/dataD files/FPGA Lab/Lab5/project_13\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+synth_design -rtl -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210248B188D9]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210248B188D9]
+open_hw_target
+set_property PROGRAM.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/impl_1/Main_ALU.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property OUTPUT_VALUE 0 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 10 [get_hw_probes A -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {A} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 10 [get_hw_probes B -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {B} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 6 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 11 [get_hw_probes B -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {B} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 5 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 3 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 44 [get_hw_probes A -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {A} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 3 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 44 [get_hw_probes A -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {A} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 43 [get_hw_probes A -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {A} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 0 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 1 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 2 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 3 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+set_property OUTPUT_VALUE 7 [get_hw_probes S -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]
+commit_hw_vio [get_hw_probes {S} -of_objects [get_hw_vios -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"v1"}]]

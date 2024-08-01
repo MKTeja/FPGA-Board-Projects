@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Sep  5 00:04:42 2022
+# Process ID: 5080
+# Current directory: D:/dataD files/FPGA Lab/Lab4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12424 D:\dataD files\FPGA Lab\Lab4\project_1\project_1.xpr
+# Log file: D:/dataD files/FPGA Lab/Lab4/project_1/vivado.log
+# Journal file: D:/dataD files/FPGA Lab/Lab4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/dataD files/FPGA Lab/Lab4/project_1/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/VIVADO/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:08 . Memory (MB): peak = 1026.203 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: LFSR_Polynomial
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1398.543 ; gain = 244.402
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1447.148 ; gain = 293.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1447.148 ; gain = 293.008
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1447.148 ; gain = 293.008
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1447.148 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Finished Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1517.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:18 . Memory (MB): peak = 1595.398 ; gain = 441.258
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:27 . Memory (MB): peak = 1595.398 ; gain = 569.195
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Sep  5 00:06:11 2022...

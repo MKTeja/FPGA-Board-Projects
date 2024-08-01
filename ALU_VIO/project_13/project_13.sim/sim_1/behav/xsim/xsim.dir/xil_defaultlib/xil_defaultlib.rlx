@@ -1,0 +1,9 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/User/project_13/project_13.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/User/project_13/project_13.srcs/sim_1/new/tb_Test.v,1647848574,verilog,,,,tb_Test,,,,,,,,
+C:/Users/User/project_13/project_13.srcs/sources_1/ip/vio_0/sim/vio_0.v,1647795845,verilog,,C:/Users/User/project_13/project_13.srcs/sources_1/new/ALU.v,,vio_0,,,,,,,,
+C:/Users/User/project_13/project_13.srcs/sources_1/new/ALU.v,1647795636,verilog,,C:/Users/User/project_13/project_13.srcs/sim_1/new/tb_Test.v,,ALU,,,,,,,,
+C:/Users/User/project_13/project_13.srcs/sources_1/new/Main_ALU.v,1647798738,verilog,,,,Main_ALU,,,,,,,,

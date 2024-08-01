@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Apr  4 13:42:14 2022
+# Process ID: 6440
+# Current directory: D:/dataD files/FPGA Lab/Lab2/counter_4bit
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28692 D:\dataD files\FPGA Lab\Lab2\counter_4bit\counter_4bit.xpr
+# Log file: D:/dataD files/FPGA Lab/Lab2/counter_4bit/vivado.log
+# Journal file: D:/dataD files/FPGA Lab/Lab2/counter_4bit\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/dataD files/FPGA Lab/Lab2/counter_4bit/counter_4bit.xpr}
+INFO: [Project 1-313] Project file moved from 'D:/FPGA Lab/Lab2/counter_4bit' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/VIVADO/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:27 ; elapsed = 00:00:13 . Memory (MB): peak = 1025.312 ; gain = 0.000
+update_compile_order -fileset sources_1

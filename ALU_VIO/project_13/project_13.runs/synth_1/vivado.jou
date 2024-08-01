@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar 25 11:37:09 2022
+# Process ID: 28112
+# Current directory: D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/synth_1
+# Command line: vivado.exe -log Main_ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Main_ALU.tcl
+# Log file: D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/synth_1/Main_ALU.vds
+# Journal file: D:/dataD files/FPGA Lab/Lab5/project_13/project_13.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main_ALU.tcl -notrace

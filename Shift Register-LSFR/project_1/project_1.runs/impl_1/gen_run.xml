@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1646377101">
+  <File Type="ROUTE-PWR" Name="LFSR_Polynomial_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="LFSR_Polynomial.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="LFSR_Polynomial_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="LFSR_Polynomial_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="LFSR_Polynomial.msk"/>
+  <File Type="ROUTE-CLK" Name="LFSR_Polynomial_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="LFSR_Polynomial.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="LFSR_Polynomial_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="LFSR_Polynomial.bit"/>
+  <File Type="BG-DRC" Name="LFSR_Polynomial.drc"/>
+  <File Type="BG-BGN" Name="LFSR_Polynomial.bgn"/>
+  <File Type="BG-BIN" Name="LFSR_Polynomial.bin"/>
+  <File Type="BITSTR-RBT" Name="LFSR_Polynomial.rbt"/>
+  <File Type="BITSTR-NKY" Name="LFSR_Polynomial.nky"/>
+  <File Type="BITSTR-BMM" Name="LFSR_Polynomial_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="LFSR_Polynomial.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="LFSR_Polynomial_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="LFSR_Polynomial.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="LFSR_Polynomial.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="LFSR_Polynomial_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="LFSR_Polynomial.hwdef"/>
+  <File Type="PLACE-IO" Name="LFSR_Polynomial_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="LFSR_Polynomial_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="LFSR_Polynomial_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="LFSR_Polynomial_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="LFSR_Polynomial_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="LFSR_Polynomial_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="LFSR_Polynomial_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="LFSR_Polynomial_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="LFSR_Polynomial_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="LFSR_Polynomial_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="LFSR_Polynomial_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="LFSR_Polynomial_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="LFSR_Polynomial_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="LFSR_Polynomial_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="LFSR_Polynomial_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="LFSR_Polynomial_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="LFSR_Polynomial_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="LFSR_Polynomial_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="LFSR_Polynomial_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="LFSR_Polynomial_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="LFSR_Polynomial_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="LFSR_Polynomial_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="LFSR_Polynomial_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="LFSR_Polynomial_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="LFSR_Polynomial_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="LFSR_Polynomial_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="LFSR_Polynomial_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="LFSR_Polynomial_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="LFSR_Polynomial_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="LFSR_Polynomial_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="LFSR_Polynomial_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="LFSR_Polynomial_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="LFSR_Polynomial_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="LFSR_Polynomial_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="LFSR_Polynomial_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="LFSR_Polynomial.pdi"/>
+  <File Type="RCFI_FILE" Name="LFSR_Polynomial.rcfi"/>
+  <File Type="CFI_FILE" Name="LFSR_Polynomial.cfi"/>
+  <File Type="RNPI_FILE" Name="LFSR_Polynomial.rnpi"/>
+  <File Type="NPI_FILE" Name="LFSR_Polynomial.npi"/>
+  <File Type="RBD_FILE" Name="LFSR_Polynomial.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/LFSR_Polynomial.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="LFSR_Polynomial"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/LFSR_Poly.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/LFSR_Poly.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,799 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Mar  4 11:08:14 2022
+# Process ID: 28800
+# Current directory: D:/dataD files/FPGA Lab/Lab4/project_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent29664 D:\dataD files\FPGA Lab\Lab4\project_1\project_1.xpr
+# Log file: D:/dataD files/FPGA Lab/Lab4/project_1/vivado.log
+# Journal file: D:/dataD files/FPGA Lab/Lab4/project_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/dataD files/FPGA Lab/Lab4/project_1/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/VIVADO/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:08 . Memory (MB): peak = 1029.109 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: LFSR_Polynomial
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1390.121 ; gain = 235.246
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1464.156 ; gain = 309.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1464.156 ; gain = 309.281
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1464.156 ; gain = 309.281
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1464.156 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1503.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:20 . Memory (MB): peak = 1583.289 ; gain = 428.414
+6 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:29 . Memory (MB): peak = 1583.289 ; gain = 554.180
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1599.805 ; gain = 15.812
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1599.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'out' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v:44]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1599.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1599.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1599.805 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [VRFC 10-2458] undeclared symbol bit, assumed default net type wire [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v:44]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2922] 'LFSR_Polynomial' expects 3 arguments [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v:44]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1603.199 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1603.199 ; gain = 0.000
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1660.156 ; gain = 53.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1692.629 ; gain = 85.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1715.520 ; gain = 108.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1715.520 ; gain = 108.480
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1715.520 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:14 . Memory (MB): peak = 1715.520 ; gain = 108.480
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+place_ports clk Y9
+place_ports rst R18
+place_ports {out[0]} T22
+place_ports {out[1]} T21
+place_ports {out[2]} U22
+place_ports {out[3]} U21
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1749.332 ; gain = 20.996
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1756.492 ; gain = 28.156
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1780.387 ; gain = 52.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1780.387 ; gain = 52.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1780.387 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:12 . Memory (MB): peak = 1780.387 ; gain = 52.051
+place_ports clk Y9
+place_ports rst R18
+place_ports {out[0]} T22
+place_ports {out[1]} T21
+place_ports {out[2]} U22
+place_ports {out[3]} U21
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out[3]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {out[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list clk]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+file mkdir {D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new}
+close [ open {D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc} w ]
+add_files -fileset constrs_1 {{D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc}}
+set_property target_constrs_file {D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc} [current_fileset -constrset]
+save_constraints -force
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar  4 11:57:58 2022] Launched synth_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/synth_1/runme.log
+[Fri Mar  4 11:57:58 2022] Launched impl_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/impl_1/runme.log
+close_design
+reset_run impl_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: LFSR_Polynomial
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1806.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1806.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1806.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1806.832 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1806.832 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Finished Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1891.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1891.484 ; gain = 84.652
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1891.484 ; gain = 84.652
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar  4 11:59:52 2022] Launched synth_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/synth_1/runme.log
+[Fri Mar  4 11:59:52 2022] Launched impl_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1891.484 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.121 . Memory (MB): peak = 2233.004 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.122 . Memory (MB): peak = 2233.004 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2233.004 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:15 . Memory (MB): peak = 2311.469 ; gain = 419.984
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z020clg484-1
+Top: LFSR_Polynomial
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 2634.023 ; gain = 162.367
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LFSR_Polynomial' [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LFSR_Polynomial' (1#1) [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 2656.641 ; gain = 184.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2680.539 ; gain = 208.883
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2680.539 ; gain = 208.883
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2680.539 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Finished Parsing XDC File [D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/constrs_1/new/LFSR_Poly.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2777.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 2777.719 ; gain = 306.062
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:16 . Memory (MB): peak = 2777.719 ; gain = 306.062
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar  4 12:28:21 2022] Launched synth_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/synth_1/runme.log
+[Fri Mar  4 12:28:21 2022] Launched impl_1...
+Run output will be captured here: D:/dataD files/FPGA Lab/Lab4/project_1/project_1.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2777.719 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'LFSR_Polynomial_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj LFSR_Polynomial_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sources_1/new/LFSR_Polynomial.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/dataD files/FPGA Lab/Lab4/project_1/project_1.srcs/sim_1/new/LFSR_Polynomial_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LFSR_Polynomial_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+"xelab -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/VIVADO/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fb6cfdd381a346719a091dbfab5b755c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LFSR_Polynomial_tb_behav xil_defaultlib.LFSR_Polynomial_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.LFSR_Polynomial
+Compiling module xil_defaultlib.LFSR_Polynomial_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LFSR_Polynomial_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/dataD files/FPGA Lab/Lab4/project_1/project_1.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "LFSR_Polynomial_tb_behav -key {Behavioral:sim_1:Functional:LFSR_Polynomial_tb} -tclbatch {LFSR_Polynomial_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+source LFSR_Polynomial_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'LFSR_Polynomial_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2964.180 ; gain = 0.145
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  4 12:40:02 2022...

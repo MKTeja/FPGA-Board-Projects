@@ -1,0 +1,6 @@
+Vivado Simulator 2020.1
+Time resolution is 1 ps
+[0] sel=0 I[0]=0, I[1]=1, I[2]=0, I[3]=1, out=0
+[50000] sel=1 I[0]=0, I[1]=1, I[2]=0, I[3]=1, out=1
+[100000] sel=2 I[0]=0, I[1]=1, I[2]=0, I[3]=1, out=0
+[150000] sel=3 I[0]=0, I[1]=1, I[2]=0, I[3]=1, out=1

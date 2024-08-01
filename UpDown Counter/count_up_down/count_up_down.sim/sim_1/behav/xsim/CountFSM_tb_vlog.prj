@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../count_up_down.srcs/sources_1/new/up_down_count.v" \
+"../../../../count_up_down.srcs/sim_1/new/CountFSM_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

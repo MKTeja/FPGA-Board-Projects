@@ -1,0 +1,7 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+D:/FPGA Lab/Lab3/count_up_down/count_up_down.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,,,,,,,
+D:/FPGA Lab/Lab3/count_up_down/count_up_down.srcs/sim_1/new/CountFSM_tb.v,1645726872,verilog,,,,CountFSM_tb,,,,,,,,
+D:/FPGA Lab/Lab3/count_up_down/count_up_down.srcs/sources_1/new/up_down_count.v,1645768260,verilog,,D:/FPGA Lab/Lab3/count_up_down/count_up_down.srcs/sim_1/new/CountFSM_tb.v,,countFSM,,,,,,,,

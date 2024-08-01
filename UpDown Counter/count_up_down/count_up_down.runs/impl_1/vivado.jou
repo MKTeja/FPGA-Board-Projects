@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Fri Feb 25 11:42:49 2022
+# Process ID: 16068
+# Current directory: D:/FPGA Lab/Lab3/count_up_down/count_up_down.runs/impl_1
+# Command line: vivado.exe -log countFSM.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source countFSM.tcl -notrace
+# Log file: D:/FPGA Lab/Lab3/count_up_down/count_up_down.runs/impl_1/countFSM.vdi
+# Journal file: D:/FPGA Lab/Lab3/count_up_down/count_up_down.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source countFSM.tcl -notrace
